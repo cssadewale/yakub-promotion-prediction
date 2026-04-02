@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────
+# Yakub Trading Group — Promotion Prediction App
+# Streamlit Deployment Dependencies
+#
+# NOTE: The model is retrained from scratch on the server at
+# first boot using the original dataset from Google Drive.
+# This avoids Python version incompatibility issues between
+# the training environment (Colab) and deployment (Streamlit).
+# ─────────────────────────────────────────────────────────────
+
+# Core data handling
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Machine learning
+scikit-learn>=1.3.0
+
+# Model caching
+joblib>=1.3.0
+
+# Web application framework
+streamlit>=1.32.0
+
+# Google Drive dataset download
+gdown>=4.7.0
